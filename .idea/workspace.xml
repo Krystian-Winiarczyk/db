@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d72a631-67e6-4f77-88e5-b051d104e6de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zaliczenie (2).sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/courses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/partials/CoursesList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/partials/CoursesList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/layouts/components/vertical-nav-menu/navMenuItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layouts/components/vertical-nav-menu/navMenuItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/courses/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/courses/courses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Courses.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Courses.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/pages/OwnedCourses.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/pages/OwnedCourses.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/pages/Sales.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/pages/Sales.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +47,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="R:\zaliczenie_bazy" />
       <recent name="R:\zaliczenie_bazy\backend" />
     </key>
   </component>
@@ -78,7 +69,7 @@
       <workItem from="1631972727882" duration="3738000" />
       <workItem from="1632040406082" duration="17011000" />
       <workItem from="1632405505917" duration="3639000" />
-      <workItem from="1632473354651" duration="6635000" />
+      <workItem from="1632473354651" duration="7453000" />
     </task>
     <servers />
   </component>
