@@ -19,6 +19,7 @@ import courses from "./courses/courses";
 import auth from "./auth/auth";
 import notifications from "./notifications/notifications";
 import sale from "./sale/sale";
+import users from "./users/users";
 
 Vue.use(Vuex)
 
@@ -32,6 +33,7 @@ export default new Vuex.Store({
         auth,
         notifications,
         sale,
+        users,
     ],
     strict: process.env.NODE_ENV !== 'production'
 })

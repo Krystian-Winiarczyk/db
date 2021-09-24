@@ -29,7 +29,16 @@
         </div>
         <vs-divider></vs-divider>
         <div class="flex justify-center flex-wrap" v-if="mode === 'rating'">
-          <star-rating :increment="0.5" :show-rating="false" :star-size="20" :border-width="4" border-color="#d8d8d8" :rounded-corners="true" :star-points="[23,2, 14,17, 0,19, 10,34, 7,50, 23,43, 38,50, 36,34, 46,19, 31,17]"></star-rating>
+          <star-rating
+              :show-rating="false"
+              :star-size="20"
+              :border-width="4"
+              border-color="#d8d8d8"
+              :rating="cours.starts"
+              :rounded-corners="true"
+              :star-points="[23,2, 14,17, 0,19, 10,34, 7,50, 23,43, 38,50, 36,34, 46,19, 31,17]"
+              @rating-selected="rateCours($event, cours)"
+          ></star-rating>
         </div>
         <div class="flex justify-between flex-wrap" v-else-if="mode === 'buy'">
           <span class="pt-2">
@@ -69,6 +78,10 @@ export default {
       // buy, rating
       default: 'buy',
     },
+    currentUserId: {
+      type: Number,
+      default: null,
+    }
   },
   mounted() {
     console.log(this.mode)
@@ -76,7 +89,27 @@ export default {
   methods: {
     onBuyCours(cours) {
       this.$emit('buyCours', cours)
-    }
+    },
+    rateCours(e, cours) {
+      console.log(e, cours)
+      const payload = {
+        coursId: cours.id,
+        userId: this.currentUserId,
+        stars: e,
+        ratingId: cours.rating_id
+      }
+      this.$store.dispatch('RATE_COURS', payload)
+          .then(() => {
+            setTimeout(() => {
+              this.showPopup = false
+              this.$vs.loading.close("#buy-btn > .con-vs-loading")
+              this.reloadCourses()
+            }, 500)
+          })
+          .catch(err => {
+            console.log(err)
+          })
+    },
   },
 }
 </script>

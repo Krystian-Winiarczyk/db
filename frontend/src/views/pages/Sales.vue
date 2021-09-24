@@ -62,6 +62,8 @@ export default {
         const dateList = res.map((item) => `${item.year} ${months[item.month - 1]}`);
         const valueList = res.map((item) => item.total_price);
 
+        console.log(res)
+
         this.line.xAxis.data = dateList
         this.line.series.data = valueList
       })

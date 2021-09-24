@@ -40,6 +40,7 @@
 
 <script>
 import CoursesList from "../components/partials/CoursesList";
+import {mapGetters} from "vuex";
 export default {
   components: {CoursesList},
   data: () => ({
@@ -59,6 +60,11 @@ export default {
     })
 
     this.reloadCourses()
+  },
+  computed: {
+    ...mapGetters({
+      user: 'getCurrentUser'
+    }),
   },
   methods: {
     reloadCourses() {
@@ -94,6 +100,7 @@ export default {
         cardOwner: this.cardOwner,
         cardTerm: this.cardTerm,
         cardCvv: this.cardCvv,
+        currentUser: this.user[0].id,
       }
 
       this.$store.dispatch('BUY_COURS', payload)

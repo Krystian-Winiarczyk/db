@@ -13,6 +13,18 @@ export default {
                     reject(err)
                 })
         }),
+        GET_OWNED_COURSES: ({ commit }, userId) => new Promise((resolve, reject) => {
+            axiosIns.get(`api/courses/owned/${userId}`)
+                .then(res => {
+                    resolve(res.data)
+                })
+                .catch(err => {
+                    reject(err)
+                })
+        }),
+        RATE_COURS: ({ commit }, payload) => new Promise((resolve, reject) => {
+            axiosIns.post('api/courses/rate', payload)
+        }),
         BUY_COURS: ({ commit }, payload) => new Promise((resolve, reject) => {
            axiosIns.post('api/courses/buy', payload)
                .then(res => {
